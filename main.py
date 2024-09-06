@@ -43,7 +43,7 @@ def mission03():
     ans = cv2.imread('mission/mission_image03.png', cv2.IMREAD_COLOR)
 
     # 하늘 부드럽게 하기 위한 Denoising
-    res = cv2.fastNlMeansDenoisingColored(org, None, 4, 10, 7, 21)
+    res = cv2.fastNlMeansDenoisingColored(org, None, 8, 10, 7, 21)
     
     # 이미지 출력
     cv2.namedWindow('org')
